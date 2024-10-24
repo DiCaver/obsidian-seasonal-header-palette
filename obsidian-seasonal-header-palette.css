@@ -17,10 +17,15 @@
    To use a different palette for individual notes, add a "cssclasses" tag in the note properties. The available 
    class names are: autumn-palette, spring-palette, summer-palette, and winter-palette. 
    
-   Note: The Outline panel will not automatically switch palettes; it will always use the default palette. 
+   Notes:
+   1. The Outline panel will not automatically switch palettes; it will always use the default palette. 
    To change the palette for the Outline panel or the default palette across Obsidian, modify the default palette
    section in this CSS file. Simply copy the #colors section from a seasonal palette and replace the #colors in
    the default palette.
+
+   2. Levels in side Outline panels are not colored by heading level. This is a limitation of Obsidian's tree hierarchy.
+   If your note will have all 6 heading levels, the Outline panel will show them all in the appropriate color. If not,
+   than top levels will be colored according to the highest level of palette and so on.
 
    You can customize this CSS with your own colors as well. If you change the colors in the seasonal palettes, 
    it won’t be a "Seasonal color palette" anymore, but feel free to adapt it as needed!
