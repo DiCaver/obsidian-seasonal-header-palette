@@ -4,11 +4,11 @@ This project provides a seasonal color palette for Obsidian headers (H), with th
 
 **Headers Preview**
 
-![Obsidian Seasonal Header Palette](obsidian-seasonal-header-palette.jpg "Obsidian Seasonal Header Palette")
+![Obsidian Seasonal Header Palette](img/obsidian-seasonal-header-palette.jpg "Obsidian Seasonal Header Palette")
 
 **Outline Preview**
 
-![Obsidian Seasonal Outline Palette](obsidian-seasonal-outline-palette.jpg "Obsidian Seasonal Outline Palette")
+![Obsidian Seasonal Outline Palette](img/obsidian-seasonal-outline-palette.jpg "Obsidian Seasonal Outline Palette")
 
 ## 🌈 Features
 Each seasonal palette is designed to bring a unique ambiance to your notes:
@@ -54,4 +54,4 @@ This project is licensed under the MIT License.
 
 If you’re enjoying this code (or it saved you from a major headache), why not buy me a coffee? Warning: there’s a strong chance it’ll turn into late-night coding fuel! Just click the button below to contribute to the caffeine-fueled madness that keeps this project going. Thanks a latte! ☕️
 
-[![Buy me a coffee](bmc_yellow-button.png "Buy me a coffee")](https://buymeacoffee.com/dicaver)
+[![Buy me a coffee](img/bmc_yellow-button.png "Buy me a coffee")](https://buymeacoffee.com/dicaver)
