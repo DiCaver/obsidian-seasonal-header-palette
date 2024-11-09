@@ -20,10 +20,10 @@ Each seasonal palette is designed to bring a unique ambiance to your notes:
 
 ## 🛠️ How to Use
 
-1. Copy the desired CSS files (`obsidian-seasonal-header-palette.css`, `obsidian-autumn.css`, `obsidian-summer.css`, `obsidian-spring.css`, `obsidian-winter.css`) into your Obsidian vault’s `snippets` folder.
+1. Copy the desired CSS files (`obsidian-seasonal-header-palette.css`, `obsidian-autumn-header-palette.css`, `obsidian-summer-header-palette.css`, `obsidian-spring-header-palette.css`, `obsidian-winter-header-palette.css`) into your Obsidian vault’s `snippets` folder.
 2. Enable the snippet(s) in Obsidian by going to **Options > Appearance > CSS snippets**.
    - **Main file**: `obsidian-seasonal-header-palette.css` includes all seasons in one file, allowing you to switch palettes by using class names in note properties.
-   - **Individual seasonal files**: Each season file (`obsidian-autumn.css`, `obsidian-summer.css`, etc.) provides a standalone color scheme for that season.
+   - **Individual seasonal files**: Each season file (`obsidian-autumn-header-palette.css`, `obsidian-summer-header-palette.css`, etc.) provides a standalone color scheme for that season.
 3. To switch between seasonal themes for individual notes:
    - If using the main file, add `cssclasses` with the season class name (`autumn-palette`, `summer-palette`, `spring-palette`, `winter-palette`) in note properties.
    - If using individual season files, simply enable or disable the corresponding snippet as needed.
