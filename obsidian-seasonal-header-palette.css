@@ -1,7 +1,7 @@
 /* Seasonal color palette for headers (H) in Obsidian
    Created by: marko@zakrajsek.org
    License: MIT or "use it as you wish"
-   Last update: 2024-10-23
+   Last update: 2024-11-09
 */
 
 /* Instructions for using this CSS:
@@ -40,7 +40,7 @@
 
    Adding new color palettes:
    If you want to add new palettes, duplicate an entire seasonal palette section, then adjust the color variables
-   under "root:" with unique names. Don’t forget to create a new class name (e.g., ".autumn-palette") for your palette.
+   under "root:" with unique names. Don’t forget to create a new class name (e.g., ".new-palette") for your palette.
 
    Enjoy customizing your Obsidian! 
 */

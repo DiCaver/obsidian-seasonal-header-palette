@@ -1,0 +1,165 @@
+/* Spring color palette for headers (H) in Obsidian
+   Created by: marko@zakrajsek.org
+   License: MIT or "use it as you wish"
+   Last update: 2024-11-09
+*/
+
+/* Instructions for using this CSS:
+   This file hold just one color palette for headers (H) in Obsidian. For entire seasonal color palette,
+   look for the file named "obsidian-seasonal-header-palette.css" in the same folder.
+
+   This file is intended for use with Obsidian and will color headers (H) in both edit and reading modes,
+   as well as in the side Outline panel. It contains two sections: color variables and a default palette.
+
+   How to apply it:
+   1. Copy this CSS file into your Obsidian vault’s 'snippets' folder. If the folder doesn’t exist, create it.
+   2. Enable the snippet in Obsidian's settings under Options > Appearance > CSS snippets.
+   
+   The default palette will be applied automatically.  
+   
+   Notes:
+   1. Levels in side Outline panels are not colored by heading level. This is a limitation of Obsidian's tree hierarchy.
+   If your note will have all 6 heading levels, the Outline panel will show them all in the appropriate color. If not,
+   than top levels will be colored according to the highest level of palette and so on.
+
+   You can customize this CSS with your own colors as well.
+
+   Websites for color palettes:
+   - https://www.schemecolor.com/tools/color-scheme-generator
+   - https://coolors.co/palettes/popular/6%20colors
+   - https://colorkit.co/palettes/6-colors/
+   
+   After selecting your colors, copy and paste them into the #colors section of the Default palette. Be mindful 
+   of color contrast to ensure the text remains legible.
+
+   Adding new color palettes:
+   If you want to add new palettes, duplicate an entire seasonal palette section, then adjust the color variables
+   under "root:" with unique names. Don’t forget to create a new class name (e.g., ".new-palette") for your palette.
+
+   Enjoy customizing your Obsidian! 
+*/
+
+/* Class name reference for Obsidian headers:
+   .inline-title: .............................................. Title of the note
+   .cm-header-x: ............................................... Headers in edit mode
+   .el-hx: ..................................................... Headers in reading mode
+   .HyperMD-header.HyperMD-header-x .collapse-indicator svg: ... Collapse indicators in edit mode
+   .el-h1 .heading-collapse-indicator svg.svg-icon: ............ Collapse indicators in reading mode
+   .tree-item > .tree-item-self .tree-item-inner: .............. Tree structure in side Outline panel
+   :not(.nav-folder-title-content):not(.nav-file-title-content): Exclude folder/file tree structure 
+*/
+
+:root {
+  /* Default palette */
+  --default-h1: #4b5320; /* Dark Olive Green for early spring growth */
+  --default-h2: #6b8e23; /* Olive Drab for a fresh spring tone */
+  --default-h3: #9acd32; /* Yellow Green for a vibrant spring feel */
+  --default-h4: #adff2f; /* Green Yellow for budding nature */
+  --default-h5: #98fb98; /* Pale Green for light spring hues */
+  --default-h6: #e0ffd1; /* Light Mint Green for a delicate spring touch */
+}
+
+/* Default palette: H settings for different Obsidian contexts ********************/
+
+/* Apply default H1 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.inline-title,
+.cm-header-1,
+.el-h1,
+.HyperMD-header.HyperMD-header-1 .collapse-indicator svg.svg-icon,
+.el-h1 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h1);
+}
+
+/* Apply default H2 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.cm-header-2,
+.el-h2,
+.HyperMD-header.HyperMD-header-2 .collapse-indicator svg.svg-icon,
+.el-h2 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h2);
+}
+
+/* Apply default H3 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.cm-header-3,
+.el-h3,
+.HyperMD-header.HyperMD-header-3 .collapse-indicator svg.svg-icon,
+.el-h3 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h3);
+}
+
+/* Apply default H4 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.cm-header-4,
+.el-h4,
+.HyperMD-header.HyperMD-header-4 .collapse-indicator svg.svg-icon,
+.el-h4 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h4);
+}
+
+/* Apply default H5 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.cm-header-5,
+.el-h5,
+.HyperMD-header.HyperMD-header-5 .collapse-indicator svg.svg-icon,
+.el-h5 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h5);
+}
+
+/* Apply default H6 color to inline titles, edit mode headers, 
+   reading mode headers, collapse indicators, and tree items */
+.cm-header-6,
+.el-h6,
+.HyperMD-header.HyperMD-header-6 .collapse-indicator svg.svg-icon,
+.el-h6 .heading-collapse-indicator.collapse-indicator svg.svg-icon,
+.tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self
+  .tree-item-inner:not(.nav-folder-title-content):not(.nav-file-title-content) {
+  color: var(--default-h6);
+}
